@@ -1,0 +1,27 @@
+<!-- about page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <h1 style="color: white; text-align: center;"> WELCOME Mr. <span id='user'></span></h1>
+    </div>
+    <script>
+        var uname = localStorage.getItem('user');
+        uname = JSON.parse(uname).username;
+        document.getElementById('user').innerHTML = uname;
+    </script>
+</body>
+</html>
